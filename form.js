@@ -16,7 +16,9 @@ headerTitle.textContent="hello";
 //headerTitle.innerHTML="good bye"
 mainheader.style.borderBottom='solid 3px #000';
 var additem=document.getElementById("additem")
-additem.style.color="green";        */
+additem.style.color="green";   
+
+
 var items=document.getElementsByClassName("list-group-item");
 console.log(items);
 items[1].textContent="hello1";
@@ -31,4 +33,22 @@ for (var i = 0;i<items.length;i++){
 }
 ////
 ///// making 3rd element green background
-items[2].style.backgroundColor='green';
+items[2].style.backgroundColor='green';         */
+
+
+///// using get element by tag name
+
+var lst=document.getElementsByTagName("li");
+console.log(lst);
+for (var i = 0;i<lst.length;i++){
+    lst[i].style.backgroundColor='yellow';
+}  
+////// makinking bold font of items
+for (var i = 0;i<lst.length;i++){
+    lst[i].style.fontWeight='bold';
+}
+////
+///// making 3rd element green background
+lst[2].style.backgroundColor='blue';  
+
+
