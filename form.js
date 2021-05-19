@@ -1,54 +1,23 @@
-/*console.log(document.domain);
-console.log(document.URL);
-console.log(document.title);
-console.log(document.doctype);
-console.log(document.head);
-console.log(document.body);
-console.log(document.all);
-console.log(document.forms);
-console.log(document.links); */
 
-//// getelementId
-/*var headerTitle= document.getElementById("header title");
-var mainheader= document.getElementById("main header");
-//console.log(headerTitle);
-headerTitle.textContent="hello";
-//headerTitle.innerHTML="good bye"
-mainheader.style.borderBottom='solid 3px #000';
-var additem=document.getElementById("additem")
-additem.style.color="green";   
+/////// Query selector /////////
 
+//var header=document.querySelector('.main header');
+//header.style.borderBottum='solid 4px #ccc';
+var input=document.querySelector('input');
+input.value='Name';
 
-var items=document.getElementsByClassName("list-group-item");
-console.log(items);
-items[1].textContent="hello1";
-items[1].style.fontWeight='bold';
-//items[1].style.backgroundColor='yellow';
-for (var i = 0;i<items.length;i++){
-    items[i].style.backgroundColor='#f4f4f4';
-}  
-////// makinking bold font of items
-for (var i = 0;i<items.length;i++){
-    items[i].style.fontWeight='bold';
-}
-////
-///// making 3rd element green background
-items[2].style.backgroundColor='green';         */
+var item= document.querySelector('.list-group-item');
+item.style.color='red';
+
+//// making second element green
+var itemsecond = document.querySelector('.list-group-item:nth-child(2)');
+itemsecond.style.backgroundColor='green';
+
+/// making third item invisible
+var itemthird= document.querySelector('.list-group-item:nth-child(3)');
+itemthird.style='display: none';
 
 
-///// using get element by tag name
 
-var lst=document.getElementsByTagName("li");
-console.log(lst);
-for (var i = 0;i<lst.length;i++){
-    lst[i].style.backgroundColor='yellow';
-}  
-////// makinking bold font of items
-for (var i = 0;i<lst.length;i++){
-    lst[i].style.fontWeight='bold';
-}
-////
-///// making 3rd element green background
-lst[2].style.backgroundColor='blue';  
 
 
